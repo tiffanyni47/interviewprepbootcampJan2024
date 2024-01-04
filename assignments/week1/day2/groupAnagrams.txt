@@ -1,0 +1,14 @@
+class Solution{
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs){
+        vector<string> sorted_str = strs;
+        vector<vector<string>> solution;
+        for(int i = 0; i < strs.size(); i++){
+            sort(sorted_str[i].begin(), sorted_str[i].end())
+        }
+        //I stoped right here, at first I thought of sorting the strings and group them in based on how they were after they are sorted
+        //I want to do compared and grouping and erase the one that is already being grouped
+        //but the thing is that vector can not delete a certain value like array bag, it can only do pop_back, which is deleting the value at the end
+        //so I stop right here and couldn't figure out what to do next
+    }
+}
